@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="flex justify-center items-center bg-[var(--Pale-blue)]">
+    <div
+      class="main flex flex-col rounded-none w-[100%] md:w-auto md:flex-row md:mt-[100px] bg-white md:rounded-[20px]"
+    >
+      <!-- LEFT SIDE -->
+      <div
+        class="left-side w-[100%] md:w-[300px] bg-gradient-to-t from-[var(--Light-royal-blue-background)] to-[var(--Light-slate-blue-background)] text-white p-[25px] rounded-bl-[20px] rounded-br-[20px] md:rounded-[20px] items-center place-items-center"
+      >
+        <h2 class="text-[18px] opacity-70">Your Result</h2>
+
+        <div
+          class="circle w-[140px] h-[140px] bg-gradient-to-b from-[var(--Violet-blue-circle)] to-[var(--Persian-blue-circle)] rounded-full flex flex-col justify-center items-center mt-[15px] mb-[15px] leading-tight"
+        >
+          <h1 class="text-[50px] font-bold text-center">76</h1>
+          <p class="text-[15px] text-center opacity-40">of 100</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl text-center font-semibold">Great</h2>
+          <p class="text-[15px] text-center mt-[10px] mb-[10px] opacity-50">
+            You scored higher than 65% of <br />the people who have taken
+            <br />these tests.
+          </p>
+        </div>
+      </div>
+      <!-- RIGHT SIDE -->
+      <div
+        class="right-side bg-white rounded-[20px] p-[20px] w-[100%] md:w-[300px]"
+      >
+        <h2
+          class="mb-[20px] text-[18px] font-semibold text-[var(--Dark-gray-blue)]"
+        >
+          Summary
+        </h2>
+
+        <div
+          class="reaction flex bg-[var(--Light-red2)] rounded-[10px] w-[100%] md:w-[260px] mb-[10px] justify-between p-[15px] md:p-[10px]"
+        >
+          <div
+            class="r1 flex items-center gap-[10px] text-[var(--Light-red)] pl-[10px]"
+          >
+            <img src="/assets/images/icon-reaction.svg" alt="reaction" />
+            <p class="text-[15px]">Reaction</p>
+          </div>
+          <div class="r2">
+            <p
+              class="text-[15px] flex items-center gap-[10px] pr-[10px] text-[var(--Dark-gray-blue)]"
+            >
+              <b>80</b> <span>/ 100</span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="memory flex bg-[var(--Orangey-yellow2)] rounded-[10px] w-[100%] md:w-[260px] mb-[10px] justify-between p-[15px] md:p-[10px]"
+        >
+          <div
+            class="m1 flex items-center gap-[10px] text-[var(--Orangey-yellow)] pl-[10px]"
+          >
+            <img src="/assets/images/icon-memory.svg" alt="memory" />
+            <p class="text-[15px]">Memory</p>
+          </div>
+          <div class="m2">
+            <p
+              class="text-[15px] flex text-center gap-[10px] pr-[10px] text-[var(--Dark-gray-blue)]"
+            >
+              <b>92</b> <span>/ 100</span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="verbal flex bg-[var(--Green-teal2)] rounded-[10px] w-[100%] md:w-[260px] mb-[10px] justify-between p-[15px] md:p-[10px]"
+        >
+          <div
+            class="v1 flex items-center gap-[10px] text-[var(--Green-teal)] pl-[10px]"
+          >
+            <img src="/assets/images/icon-verbal.svg" alt="verbal" />
+            <p class="text-[15px]">Verbal</p>
+          </div>
+          <div class="v2">
+            <p
+              class="text-[15px] flex items-center gap-[10px] pr-[10px] text-[var(--Dark-gray-blue)]"
+            >
+              <b>61</b> <span>/ 100</span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="visual flex bg-[var(--Cobalt-blue2)] rounded-[10px] w-[100%] md:w-[260px] justify-between p-[15px] md:p-[10px]"
+        >
+          <div
+            class="vis1 flex items-center gap-[10px] text-[var(--Cobalt-blue)] pl-[10px]"
+          >
+            <img src="/assets/images/icon-visual.svg" alt="visual" />
+            <p class="text-[15px]">Visual</p>
+          </div>
+          <div class="vis2">
+            <p
+              class="text-[15px] flex items-center gap-[10px] pr-[10px] text-[var(--Dark-gray-blue)]"
+            >
+              <b>73</b><span>/ 100</span>
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="mt-[15px] w-[100%] md:w-[260px] rounded-[50px] p-[13px] text-white bg-[var(--Dark-gray-blue)] border-none cursor-pointer hover:bg-gradient-to-t from-[var(--Light-royal-blue-background)] to-[var(--Light-slate-blue-background)]"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
